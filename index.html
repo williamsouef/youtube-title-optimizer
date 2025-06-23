@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Title Optimizer - Get 10x More Views with Better Titles</title>
+    <meta name="description" content="Free AI-powered tool that helps YouTubers write titles that get clicked. Join 500+ creators getting more views.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- Navigation Bar -->
+        <nav class="glass">
+            <div class="logo">YT Optimizer</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#features">Features</a>
+                <a href="#how">How it Works</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <button class="nav-cta" onclick="window.open('https://twitter.com/intent/follow?screen_name=YourTwitterHandle','_blank')">Explore</button>
+                <button id="darkModeToggle" class="nav-cta" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <section class="hero glass">
+            <div class="hero-content">
+                <div class="hero-title">Smarter YouTube Titles in Your Pocket</div>
+                <div class="hero-subtitle">Your content deserves to be seen. Let AI help you write titles that get clicked.</div>
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="window.open('https://twitter.com/intent/follow?screen_name=YourTwitterHandle','_blank')">Open an Account</button>
+                    <button class="btn-secondary" onclick="window.location.href='#contact'">Contact Us</button>
+                </div>
+                <form class="hero-email" onsubmit="event.preventDefault(); alert('Thank you! We will be in touch.');">
+                    <input type="email" placeholder="Your Email here" required>
+                    <button type="submit">Get Started Free</button>
+                </form>
+            </div>
+            <div class="hero-image">
+                <div class="main-img-card glass">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Icon">
+                </div>
+                <div class="mini-img-card glass">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                    <span>"Doubled my views in a week!"</span>
+                </div>
+            </div>
+        </section>
+        <!-- Stats and Trusted Logos -->
+        <div class="stats-logos glass">
+            <div class="stat-block">
+                <div class="stat-number">6.3K</div>
+                <div class="stat-label">Invest in Your Future Today</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Banking Made Human.</div>
+            </div>
+            <div class="trusted-logos">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Zoom_Communications_Logo.svg" alt="Zoom">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/ASUS_Logo.svg" alt="ASUS">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/AECOM_logo.svg" alt="AECOM">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Stripe_Logo%2C_revised_2016.svg" alt="Stripe">
+            </div>
+        </div>
+        <!-- Problem/Solution Section -->
+        <section id="features" class="glass">
+            <div class="section-title">Your Titles Are Why You're Not Growing</div>
+            <div class="section-desc">
+                You spend hours creating amazing content, perfecting your editing, and crafting the perfect thumbnail. But if your title doesn't make people click, all that work goes unseen. Studies show that 80% of your video's success comes down to the title and thumbnail combination.
+            </div>
+            <div class="example glass">
+                <p><span class="before">Before:</span> "My Morning Routine"</p>
+                <p><span class="after">After:</span> "The 5AM Morning Routine That Doubled My Income"</p>
+                <p><strong>Result:</strong> 2,341 views → 67,892 views</p>
+            </div>
+        </section>
+        <!-- How it Works Section -->
+        <section id="how" class="glass">
+            <div class="section-title">How It Works</div>
+            <div class="section-desc">
+                Our AI-powered Twitter bot analyzes successful YouTube videos in your niche and helps you craft titles that trigger curiosity, emotion, and clicks. Simply tweet at us or follow for daily tips.
+            </div>
+            <ul class="features">
+                <li>Tweet us your current title and video topic</li>
+                <li>Get 5 optimized title suggestions within minutes</li>
+                <li>Learn the psychology behind what makes titles work</li>
+                <li>Track your results and improve over time</li>
+                <li>Join our community of growing YouTubers</li>
+            </ul>
+        </section>
+        <!-- Social Proof / Testimonials -->
+        <section id="testimonials" class="glass">
+            <div class="section-title">Trusted by Growing YouTubers</div>
+            <div class="stats-logos" style="margin: 0 0 18px 0;">
+                <div class="stat-block">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-number">2.5M</div>
+                    <div class="stat-label">Extra Views Generated</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-number">93%</div>
+                    <div class="stat-label">See Results in First Week</div>
+                </div>
+            </div>
+            <div class="testimonial glass">
+                <p><strong>@GamingCreator:</strong> "Changed my Minecraft video title based on their suggestion. Went from 5K to 125K views. This is magic!"</p>
+            </div>
+            <div class="testimonial glass">
+                <p><strong>@CookingChannel:</strong> "I was stuck at 1K views per video. Now averaging 25K+ just by improving my titles. Wish I found this sooner!"</p>
+            </div>
+        </section>
+        <!-- More Examples Section -->
+        <section class="glass">
+            <div class="section-title">Title Transformations That Work</div>
+            <div class="section-desc">Here are real examples from our users across different YouTube niches:</div>
+            <div class="example glass">
+                <h3>Tech Reviews</h3>
+                <p><span class="before">Before:</span> "iPhone 15 Review"</p>
+                <p><span class="after">After:</span> "I Used iPhone 15 for 30 Days - You Won't Believe What Broke"</p>
+            </div>
+            <div class="example glass">
+                <h3>Fitness</h3>
+                <p><span class="before">Before:</span> "Full Body Workout"</p>
+                <p><span class="after">After:</span> "The 15-Minute Workout That Replaced My Gym Membership"</p>
+            </div>
+            <div class="example glass">
+                <h3>Education</h3>
+                <p><span class="before">Before:</span> "Learn Python Programming"</p>
+                <p><span class="after">After:</span> "How I Learned Python in 7 Days (And Got a $100K Job)"</p>
+            </div>
+        </section>
+        <!-- Call to Action Section -->
+        <section class="glass" style="text-align: center;">
+            <div class="section-title">Ready to 10x Your Views?</div>
+            <div class="section-desc">
+                Join hundreds of creators who are finally getting the views they deserve. Our Twitter bot is free to use - just follow and tweet at us for instant help.
+            </div>
+            <button class="btn-primary" onclick="window.open('https://twitter.com/intent/follow?screen_name=YourTwitterHandle','_blank')">Follow @YourTwitterHandle on Twitter</button>
+            <p style="margin-top: 20px;">
+                <strong>Quick Start:</strong> Tweet your YouTube title to @YourTwitterHandle and get optimized suggestions in minutes!
+            </p>
+        </section>
+        <!-- Footer -->
+        <footer class="glass">
+            <p>YouTube Title Optimizer is an AI-powered tool that helps creators write better titles.</p>
+            <p>Not affiliated with YouTube or Google. Results vary based on content quality and niche.</p>
+            <p>
+                <a href="https://twitter.com/YourTwitterHandle">Twitter</a> |
+                <a href="mailto:your-email@example.com">Contact</a> |
+                <a href="#privacy">Privacy Policy</a>
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
