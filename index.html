@@ -157,7 +157,24 @@
                 <a href="#privacy">Privacy Policy</a>
             </p>
         </footer>
+        <form id="emailForm" style="margin-top:2em;">
+            <input type="email" id="emailInput" placeholder="Enter your email" required style="padding:0.5em;"/>
+            <button type="submit" style="padding:0.5em 1em;">Get Updates</button>
+        </form>
     </div>
     <script src="script.js"></script>
+    <script>
+    document.getElementById('emailForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const email = document.getElementById('emailInput').value;
+        await fetch('https://moodly.app.n8n.cloud/webhook/email-submission', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email })
+        });
+        alert('Thank you! Please check your email for confirmation.');
+        document.getElementById('emailForm').reset();
+    });
+    </script>
 </body>
 </html> 
